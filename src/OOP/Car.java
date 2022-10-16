@@ -18,13 +18,37 @@ public class Car {
         this.speed = 0;
     }
 
+    public Car(int tyres, int windows, int doors, String color, int speed) {
+        this.tyres = tyres;
+        this.windows = windows;
+        this.doors = doors;
+        this.color = color;
+        this.speed = speed;
+    }
+
     // Behaviours
     public void accelerate(int increasedSpeed) {
         speed += increasedSpeed;
     }
 
-    void display() {
+    public void display() {
         System.out.println("Car = tyres:"+tyres+", windows:"+windows+", doors:"+doors+", color:"+color);
+    }
+
+    public int getTyres() {
+        return tyres;
+    }
+
+    public int getWindows() {
+        return windows;
+    }
+
+    public int getDoors() {
+        return doors;
+    }
+
+    public String getColor() {
+        return color;
     }
 }
 

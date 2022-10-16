@@ -8,4 +8,8 @@ public class SUV extends Car {
         super(tyres, windows, doors, color);
         this.seats = seats;
     }
+
+    public void display() {
+        System.out.println("Car = tyres:"+getTyres()+", windows:"+getWindows()+", doors:"+getDoors()+", color:"+getColor()+", seats:"+seats);
+    }
 }
